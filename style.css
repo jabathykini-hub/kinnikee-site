@@ -164,3 +164,36 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* New Gallery Grid Styles */
+.gallery-section {
+    background-color: #1a1a1a;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.gallery-item {
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
