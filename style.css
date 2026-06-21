@@ -398,3 +398,21 @@ footer {
 	                    	            }
 	                    }
 }
+
+/* Profile Image Constraints */
+.profile-frame {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
